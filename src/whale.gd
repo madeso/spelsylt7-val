@@ -13,6 +13,10 @@ var wait_timer = 0
 var playing = true
 var start = true
 
+const SPACE_Y = -700
+const SPACE_OFFSET = 333
+var in_space = false
+
 func _input(event):
 	if event.is_action_pressed("click"):
 		if dashing == false and (playing or start):
@@ -23,6 +27,10 @@ func _input(event):
 			print("daashing")
 
 func _physics_process(delta):
+	if position.y < SPACE_Y + SPACE_OFFSET and in_space == false:
+		VisualServer.set_default_clear_color(Color(0, 0, 0, 1))
+		in_space = true
+		
 	if start == false:
 		velocity = position.direction_to(target) * speed
 		var dist = position.distance_to(target)
@@ -38,4 +46,5 @@ func _physics_process(delta):
 		
 		if wait_timer > MAX_WAIT and playing:
 			playing = false
+			VisualServer.set_default_clear_color(Color(0.9,0.2,0.2,1.0))
 			print("failed")
