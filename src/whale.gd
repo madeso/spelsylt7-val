@@ -46,5 +46,4 @@ func _physics_process(delta):
 		
 		if wait_timer > MAX_WAIT and playing:
 			playing = false
-			VisualServer.set_default_clear_color(Color(0.9,0.2,0.2,1.0))
-			print("failed")
+			get_tree().change_scene("res://Scenes/dashing.tscn")
