@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 const DEAD_ZONE = 600
 const DEAD_ZONE_TARGET = DEAD_ZONE + 20
-const MAX_WAIT = 0.5
+const MAX_WAIT = 1.5
 
 var speed = 600
 
@@ -12,17 +12,23 @@ var dashing = false
 var wait_timer = 0
 var playing = true
 var start = true
-
+var has_collected_this_round = true
 
 
 func _input(event):
 	if event.is_action_pressed("click"):
 		if dashing == false and (playing or start):
-			target = get_global_mouse_position()
-			dashing = true
-			start = false
-			wait_timer = 0
-			print("daashing")
+			if has_collected_this_round:
+				target = get_global_mouse_position()
+				dashing = true
+				start = false
+				wait_timer = 0
+				has_collected_this_round = false
+				print("daashing")
+
+func collected():
+	print("collected")
+	has_collected_this_round = true
 
 func _physics_process(delta):
 	if start == false:
