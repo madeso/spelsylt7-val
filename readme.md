@@ -21,7 +21,7 @@ day |       |  | h | |
 13  | 19/10 | tue | 2 | art
 14  | 19/10 | wed | 2 | art
 15  | 20/10 | thu | 2 | art
-16  | 21/10 | fri | ? | ?
+16  | 21/10 | fri | 3 | implemented most of the gameplay and scene transitions
 17  | 22/10 | sat | ? | ?
 
 ## Game design
