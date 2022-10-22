@@ -1,8 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://story.png" type="Texture" id=1]
 [ext_resource path="res://Prefabs/Politics.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/done.gd" type="Script" id=3]
+[ext_resource path="res://Prefabs/Story-pub-1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Prefabs/Story-pub-2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://story-op-line.png" type="Texture" id=6]
+[ext_resource path="res://story-op-indicator.png" type="Texture" id=7]
+[ext_resource path="res://Prefabs/Story-pub-4.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Prefabs/Story-pub-3.tscn" type="PackedScene" id=9]
+[ext_resource path="res://wiggle.gd" type="Script" id=10]
 
 [node name="Done" type="Sprite"]
 position = Vector2( 188, 333 )
@@ -11,3 +18,195 @@ script = ExtResource( 3 )
 
 [node name="Politics" parent="." instance=ExtResource( 2 )]
 position = Vector2( -188, -262 )
+
+[node name="Story-op-line" type="Sprite" parent="."]
+position = Vector2( 2, 167 )
+texture = ExtResource( 6 )
+
+[node name="Story-op-indicator" type="Sprite" parent="."]
+position = Vector2( -5, 166 )
+texture = ExtResource( 7 )
+script = ExtResource( 10 )
+scale_factor = 40
+scale_factor_y = 0.1
+inter_speed = 2.0
+
+[node name="Story-pub-1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 96.5, 261.5 )
+
+[node name="Story-pub-2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 46.5, 259.5 )
+
+[node name="Story-pub-18" parent="." instance=ExtResource( 5 )]
+position = Vector2( -85.5, 261.5 )
+
+[node name="Story-pub-3" parent="." instance=ExtResource( 9 )]
+position = Vector2( -52.5, 255.5 )
+
+[node name="Story-pub-4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 16.5, 265.5 )
+
+[node name="Story-pub-5" parent="." instance=ExtResource( 4 )]
+position = Vector2( -110, 261 )
+
+[node name="Story-pub-17" parent="." instance=ExtResource( 4 )]
+position = Vector2( -38.5, 259.5 )
+
+[node name="Story-pub-6" parent="." instance=ExtResource( 5 )]
+position = Vector2( -67, 257 )
+
+[node name="Story-pub-7" parent="." instance=ExtResource( 9 )]
+position = Vector2( -20.5, 255.5 )
+
+[node name="Story-pub-8" parent="." instance=ExtResource( 8 )]
+position = Vector2( 102.5, 261.5 )
+
+[node name="Story-pub-9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 124.5, 260.5 )
+
+[node name="Story-pub-10" parent="." instance=ExtResource( 5 )]
+position = Vector2( 166, 252.5 )
+
+[node name="Story-pub-11" parent="." instance=ExtResource( 9 )]
+position = Vector2( 186, 256.5 )
+
+[node name="Story-pub-20" parent="." instance=ExtResource( 9 )]
+position = Vector2( -187.5, 252.5 )
+
+[node name="Story-pub-12" parent="." instance=ExtResource( 8 )]
+position = Vector2( -160.5, 258.5 )
+
+[node name="Story-pub-19" parent="." instance=ExtResource( 8 )]
+position = Vector2( 157, 259.5 )
+
+[node name="Story-pub-13" parent="." instance=ExtResource( 4 )]
+position = Vector2( -139.5, 259.5 )
+
+[node name="Story-pub-14" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1.5, 259.5 )
+
+[node name="Story-pub-15" parent="." instance=ExtResource( 9 )]
+position = Vector2( -177.5, 256.5 )
+
+[node name="Story-pub-16" parent="." instance=ExtResource( 8 )]
+position = Vector2( 66.5, 259.5 )
+
+[node name="Story-pub-21" parent="." instance=ExtResource( 4 )]
+position = Vector2( -16.5, 282.5 )
+
+[node name="Story-pub-22" parent="." instance=ExtResource( 5 )]
+position = Vector2( -66.5, 280.5 )
+
+[node name="Story-pub-23" parent="." instance=ExtResource( 5 )]
+position = Vector2( 7.5, 280 )
+
+[node name="Story-pub-24" parent="." instance=ExtResource( 9 )]
+position = Vector2( -157, 281.5 )
+
+[node name="Story-pub-25" parent="." instance=ExtResource( 8 )]
+position = Vector2( -94.5, 274.5 )
+
+[node name="Story-pub-26" parent="." instance=ExtResource( 4 )]
+position = Vector2( 168, 283 )
+
+[node name="Story-pub-27" parent="." instance=ExtResource( 4 )]
+position = Vector2( -143, 285.5 )
+
+[node name="Story-pub-28" parent="." instance=ExtResource( 5 )]
+position = Vector2( -171.5, 283 )
+
+[node name="Story-pub-29" parent="." instance=ExtResource( 9 )]
+position = Vector2( -110, 285.5 )
+
+[node name="Story-pub-30" parent="." instance=ExtResource( 8 )]
+position = Vector2( -10.5, 282.5 )
+
+[node name="Story-pub-31" parent="." instance=ExtResource( 4 )]
+position = Vector2( 28, 281.5 )
+
+[node name="Story-pub-32" parent="." instance=ExtResource( 5 )]
+position = Vector2( 59, 272.5 )
+
+[node name="Story-pub-33" parent="." instance=ExtResource( 9 )]
+position = Vector2( 79, 276.5 )
+
+[node name="Story-pub-34" parent="." instance=ExtResource( 9 )]
+position = Vector2( -184.5, 282 )
+
+[node name="Story-pub-35" parent="." instance=ExtResource( 8 )]
+position = Vector2( 122, 283.5 )
+
+[node name="Story-pub-36" parent="." instance=ExtResource( 8 )]
+position = Vector2( 50, 279.5 )
+
+[node name="Story-pub-37" parent="." instance=ExtResource( 4 )]
+position = Vector2( 143, 284.5 )
+
+[node name="Story-pub-38" parent="." instance=ExtResource( 5 )]
+position = Vector2( -126.5, 276.5 )
+
+[node name="Story-pub-39" parent="." instance=ExtResource( 9 )]
+position = Vector2( 105, 281.5 )
+
+[node name="Story-pub-40" parent="." instance=ExtResource( 8 )]
+position = Vector2( -46.5, 280.5 )
+
+[node name="Story-pub-41" parent="." instance=ExtResource( 4 )]
+position = Vector2( -157, 314.5 )
+
+[node name="Story-pub-42" parent="." instance=ExtResource( 5 )]
+position = Vector2( 182, 310.5 )
+
+[node name="Story-pub-43" parent="." instance=ExtResource( 5 )]
+position = Vector2( 39.5, 311.5 )
+
+[node name="Story-pub-44" parent="." instance=ExtResource( 9 )]
+position = Vector2( 72.5, 305.5 )
+
+[node name="Story-pub-45" parent="." instance=ExtResource( 8 )]
+position = Vector2( 151, 311 )
+
+[node name="Story-pub-46" parent="." instance=ExtResource( 4 )]
+position = Vector2( -40.5, 315 )
+
+[node name="Story-pub-47" parent="." instance=ExtResource( 4 )]
+position = Vector2( 86.5, 309.5 )
+
+[node name="Story-pub-48" parent="." instance=ExtResource( 5 )]
+position = Vector2( 58, 307 )
+
+[node name="Story-pub-49" parent="." instance=ExtResource( 9 )]
+position = Vector2( 105.5, 310.5 )
+
+[node name="Story-pub-50" parent="." instance=ExtResource( 8 )]
+position = Vector2( -151, 314.5 )
+
+[node name="Story-pub-51" parent="." instance=ExtResource( 4 )]
+position = Vector2( -114, 317.5 )
+
+[node name="Story-pub-52" parent="." instance=ExtResource( 5 )]
+position = Vector2( 11.5, 305.5 )
+
+[node name="Story-pub-53" parent="." instance=ExtResource( 9 )]
+position = Vector2( 31.5, 309.5 )
+
+[node name="Story-pub-54" parent="." instance=ExtResource( 9 )]
+position = Vector2( -181.5, 313 )
+
+[node name="Story-pub-55" parent="." instance=ExtResource( 8 )]
+position = Vector2( -76, 316.5 )
+
+[node name="Story-pub-56" parent="." instance=ExtResource( 8 )]
+position = Vector2( -132, 311 )
+
+[node name="Story-pub-57" parent="." instance=ExtResource( 4 )]
+position = Vector2( -61, 321 )
+
+[node name="Story-pub-58" parent="." instance=ExtResource( 5 )]
+position = Vector2( 127.5, 314.5 )
+
+[node name="Story-pub-59" parent="." instance=ExtResource( 9 )]
+position = Vector2( -93, 314.5 )
+
+[node name="Story-pub-60" parent="." instance=ExtResource( 8 )]
+position = Vector2( -20.5, 312.5 )

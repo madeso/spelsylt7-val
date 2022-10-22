@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://story.png" type="Texture" id=1]
 [ext_resource path="res://Prefabs/Politics.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/story.gd" type="Script" id=3]
+[ext_resource path="res://story-visa-opinionen.png" type="Texture" id=4]
+[ext_resource path="res://story-val-snart.png" type="Texture" id=5]
+[ext_resource path="res://wiggle.gd" type="Script" id=6]
 
 [node name="Story" type="Sprite"]
 position = Vector2( 188, 333 )
@@ -14,3 +17,15 @@ __meta__ = {
 
 [node name="Politics" parent="." instance=ExtResource( 2 )]
 position = Vector2( -188, 0 )
+
+[node name="Story-val-snart" type="Sprite" parent="."]
+position = Vector2( 5, -234 )
+texture = ExtResource( 5 )
+script = ExtResource( 6 )
+scale_factor = 10
+
+[node name="Story-visa-opinionen" type="Sprite" parent="."]
+position = Vector2( 6, -187 )
+texture = ExtResource( 4 )
+script = ExtResource( 6 )
+scale_factor = 10
