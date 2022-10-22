@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://story-natur-body.png" type="Texture" id=1]
 [ext_resource path="res://story-natur-head.png" type="Texture" id=2]
@@ -8,24 +8,33 @@
 [ext_resource path="res://story-industri-head.png" type="Texture" id=6]
 [ext_resource path="res://story-industri-body.png" type="Texture" id=7]
 [ext_resource path="res://story-industri-speech.png" type="Texture" id=8]
+[ext_resource path="res://wiggle.gd" type="Script" id=9]
 
 [node name="Politics" type="Node2D"]
 
 [node name="Story-natur-bkg" type="Sprite" parent="."]
 position = Vector2( 85, 60 )
 texture = ExtResource( 4 )
+script = ExtResource( 9 )
+scale_factor = 40
 
-[node name="Story-natur-body" type="Sprite" parent="Story-natur-bkg"]
-position = Vector2( -9, 104 )
+[node name="Story-natur-body" type="Sprite" parent="."]
+position = Vector2( 76, 164 )
 texture = ExtResource( 1 )
+script = ExtResource( 9 )
+scale_factor = 10
 
-[node name="Story-natur-speech" type="Sprite" parent="Story-natur-bkg/Story-natur-body"]
+[node name="Story-natur-speech" type="Sprite" parent="Story-natur-body"]
 position = Vector2( 70, 51 )
 texture = ExtResource( 3 )
+script = ExtResource( 9 )
+scale_factor = 10
 
-[node name="Story-natur-head" type="Sprite" parent="Story-natur-bkg/Story-natur-body"]
+[node name="Story-natur-head" type="Sprite" parent="Story-natur-body"]
 position = Vector2( 23, -37 )
 texture = ExtResource( 2 )
+script = ExtResource( 9 )
+scale_factor = 20
 
 [node name="Story-industri-bkg" type="Sprite" parent="."]
 position = Vector2( 291, 150 )
@@ -34,11 +43,15 @@ texture = ExtResource( 5 )
 [node name="Story-industri-body" type="Sprite" parent="Story-industri-bkg"]
 position = Vector2( 29, 28 )
 texture = ExtResource( 7 )
+script = ExtResource( 9 )
 
 [node name="Story-industri-head" type="Sprite" parent="Story-industri-bkg/Story-industri-body"]
 position = Vector2( -1, -56 )
 texture = ExtResource( 6 )
+script = ExtResource( 9 )
+scale_factor = 10
 
 [node name="Story-industri-speech" type="Sprite" parent="Story-industri-bkg/Story-industri-body/Story-industri-head"]
 position = Vector2( -78, -19 )
 texture = ExtResource( 8 )
+script = ExtResource( 9 )
