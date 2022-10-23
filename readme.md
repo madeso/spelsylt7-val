@@ -1,6 +1,14 @@
-# spelsylt 7: miljöval
+![cover](cover.png)
 
-Make a game in ~2 weeks, with about 1-2 hours/day (so you can live a life while making the game)
+A game made in ~2 weeks, with about 1-2 hours/day (so you can live a life while making the game) for the [kodsnack](https://kodsnack.se/) gamejam [spelsylt number 7](https://itch.io/jam/spelsylt7)
+
+Missing some whale upgrades, sounds, juice and a scoring.
+
+## play
+
+https://madeso.itch.io/miljoval
+
+## time spent
 
 day |       |  | h | |
 ----|-------|-----|---|----
@@ -22,7 +30,10 @@ day |       |  | h | |
 14  | 19/10 | wed | 2 | art
 15  | 20/10 | thu | 2 | art
 16  | 21/10 | fri | 3 | implemented most of the gameplay and scene transitions
-17  | 22/10 | sat | ? | ?
+17  | 22/10 | sat | 4 | tweaking and some wiggle juice
+&nbsp;|     |  | **17** | 
+
+
 
 ## Game design
 ![game design](design.jpeg)
