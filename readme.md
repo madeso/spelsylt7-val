@@ -4,6 +4,12 @@ A game made in ~2 weeks, with about 1-2 hours/day (so you can live a life while 
 
 Missing some whale upgrades, sounds, juice and a scoring.
 
+## tools used
+
+* [paint.net](https://www.getpaint.net/)
+* [godot](https://godotengine.org/)
+* lots and lots of googling
+
 ## play
 
 https://madeso.itch.io/miljoval
